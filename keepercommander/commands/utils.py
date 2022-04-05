@@ -613,6 +613,7 @@ class VersionCommand(Command):
             print('{0}: {1}'.format('Commander Version', this_app_version))
         else:
             print('{0:>20s}: {1}'.format('Commander Version', this_app_version))
+            print('{0:>20s}: {1}'.format('Client Version', rest_api.CLIENT_VERSION))
             print('{0:>20s}: {1}'.format('Python Version', sys.version.replace("\n", "")))
             print('{0:>20s}: {1}'.format('Operating System', loginv3.CommonHelperMethods.get_os() + '(' + platform.release() + ')'))
             print('{0:>20s}: {1}'.format('Working directory', os.getcwd()))
